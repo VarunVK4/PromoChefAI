@@ -136,7 +136,9 @@ Modern Red Theme.`}
 
           <Select
             value={style}
-            onValueChange={setStyle}
+            onValueChange={(value) => {
+  if (value) setStyle(value);
+}}
           >
             <SelectTrigger>
               <SelectValue />
